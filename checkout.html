@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+ <p id="demo"></p>
+
+ <p id="name"></p>
+ <p id="price"></p>
+ 
+ <p id="total"></p>
+
+<script>
+
+
+        var value1 = sessionStorage.getItem("key");
+        var doubleValue1 = parseFloat(value1);
+        var newValue = doubleValue1 || 0;
+
+        var value2 = sessionStorage.getItem("name");
+        var value3 = sessionStorage.getItem("price");
+        var doubleValue2 = parseFloat(value3);
+
+        var total = newValue +  doubleValue2;
+
+
+        document.getElementById("demo").innerHTML = value1;
+        document.getElementById("name").innerHTML = value2;
+        document.getElementById("price").innerHTML = value3;
+        document.getElementById("total").innerHTML = total;
+        console.log(value);
+</script>
+
+</html>
